@@ -6,7 +6,7 @@ import numpy as np
 
 model = pickle.load(open("house_price_model.pkl", "rb"))
 
-st.title("🏠 House Price Prediction App")
+st.title(" House Price Prediction App")
 st.write("Enter house details and get a predicted price!")
 
 size = st.number_input("House size (sq ft)", min_value=300, max_value=5000, value=1200)
@@ -17,6 +17,7 @@ if st.button("Predict Price"):
     prediction = model.predict(input_data)
     
     st.success(f"Estimated House Price: **${prediction[0]:,.2f}**")
+
 
 
 
