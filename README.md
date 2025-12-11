@@ -21,16 +21,25 @@ A saved model file (house_price_model.pkl) that the app loads automatically
 ├── app.py                     
 ├── train_model.py             
 ├── house_price_model.pkl
+
 ├── README.md                  
 
 Training Script — train_model.py
 Builds a DataFrame
+
 Splits data
+
 Trains Linear Regression
+
 Saves the model
 
  Web App — app.py
+
+ 
 Loads model
+
 Takes user input
+
 Uses model.predict()
+
 Displays formatted price
